@@ -92,7 +92,7 @@ I've generally run through the tutorial on [THE ULTIMATE FLEXBOX CHEAT SHEET](ht
 
 ```
 
-## All directions
+## All directions ( ie all items will be aligned vertically and horizontally. )
 
 ```
 .flex-container-all {
