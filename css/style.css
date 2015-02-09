@@ -20,12 +20,28 @@
     background-color: violet;
 }
 
+.chocolate {
+    background-color: chocolate;
+}
+
 .green {
     background-color: green;
 }
 
 .green-border {
     border: 1px solid green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.yellow-border {
+    border: 1px solid yellow;
+}
+
+.brown {
+    background-color: brown;
 }
 
 /* Center both horizontal and vertical */
@@ -48,7 +64,7 @@
     align-items: center;
 }
 
-/* Centers vertically and */
+/* items are evenly distributed in the line with equal space around them */
 .flex-container-space-around {
     display: -webkit-flex;
     display: flex;
@@ -56,6 +72,32 @@
     justify-content: space-around;
     -webkit-align-items: center;
     align-items: center;
+}
+
+/* Arrange as row */
+.flex-container-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.flex-container-row-start {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-container-row-end {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 /* Arrange as column */
@@ -66,13 +108,7 @@
     flex-direction: column;
 }
 
-/* Arrange as row */
-.flex-container-row {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-}
+
 
 /* Arrange as column from top */
 .flex-container-column-top {
@@ -94,11 +130,24 @@
     justify-content: flex-end;
 }
 
-.flex-container-all {
+/* Centers all in a row */
+.flex-container-all-row {
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row /* works with row or column */
-flex-direction : row;
+    -webkit-flex-direction: row; /* works with row or column */
+    flex-direction : row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+/* Centers all in a column */
+.flex-container-all-column {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column; /* works with row or column */
+    flex-direction : column;
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;

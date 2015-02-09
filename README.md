@@ -50,6 +50,83 @@ I've generally run through the tutorial on [THE ULTIMATE FLEXBOX CHEAT SHEET](ht
 }
 ```
 
+### Space around
+
+<cite>"..items are evenly distributed in the line with equal space around them...<cite>
+
+```
+.flex-container-space-around {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+}
+```
+
+### Row
+
+
+```
+.flex-container-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+```
+
+
+### Column
+
+
+```
+.flex-container-column {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+```
+
+## All directions
+
+```
+.flex-container-all {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row /* works with row or column */
+    flex-direction : row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+```
+
+### Define end or start points
+
+(Looks like that `flex-start` is the default.)
+
+```
+# if used in column the first item will align to the top
+# if used in row the first item will align to the left
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+
+```
+
+```
+# if used in column the first item will align to the bottom
+# if used in row the first item will align to the right
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+```
+
+
 ## Links
 
 * [THE ULTIMATE FLEXBOX CHEAT SHEET](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
