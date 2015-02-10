@@ -91,6 +91,7 @@
     justify-content: flex-start;
 }
 
+/*row end*/
 .flex-container-row-end {
     display: -webkit-flex;
     display: flex;
@@ -98,6 +99,16 @@
     flex-direction: row;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
+}
+
+/* Reverse row */
+.flex-container-row-reverse {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 /* Arrange as column */

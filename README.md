@@ -127,8 +127,24 @@ I've generally run through the tutorial on [THE ULTIMATE FLEXBOX CHEAT SHEET](ht
 ```
 
 
+### Reverse (TODO)
+
+```
+/* Reverse row */
+.flex-container-row-reverse {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: center;
+    align-items: center;
+}
+```
+
+
 ## Links
 
 * [THE ULTIMATE FLEXBOX CHEAT SHEET](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 * [centering-css-complete-guide](http://css-tricks.com/centering-css-complete-guide/)
 * [Goodbye floats and clearfixes.](http://www.sketchingwithcss.com/flexbox-tutorial/)
+* [flex-direction](http://css-tricks.com/almanac/properties/f/flex-direction/)
